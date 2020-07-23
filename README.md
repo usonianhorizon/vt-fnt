@@ -42,7 +42,7 @@ A couple of edits in the BDF will solve this:
 1. The other edit was to delete all characters after 255.  The `STARTCHAR` might be descriptive or not (IBMPlexMono has it as _ydieresis_), but just delete all of the remaining chars while leaving the final `ENDFONT` line in place.  In the case of IBMPlexMono, I simply searched for `ENCODING 256`; selected from the previous `STARTCHAR` line to the penultimate line; and then deleted that selected block, leaving the `ENDFONT` line intact.
 1. In `FONT` line ensure that `SPACING` as per X- logical font description is 'C' for _Character Cell_ \(See: [X logical font description](https://en.wikipedia.org/wiki/X_logical_font_description)\).  And also ensure that the line that explicitly states `SPACING` matches with a corresponding 'C'.
 
-## Part III&mdash;Install FNT files.
+## Part III&mdash;Install FNT files
 With these changes go ahead and run the usual commands to install:
 
 ```
