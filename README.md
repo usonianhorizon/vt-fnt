@@ -24,7 +24,7 @@ Here, in any case, is my recipe:
 1. Use FontForge to load up .OTF file (in the weight of choice).
 1. Force encoding through `Encoding > Force Encoding > ISO 8859-1`
 1. Generate bitmaps through `Element > Bitmap Strikes Available`
-1. Generate font through `File > Generate Fonts... after selecting BDF output`
+1. Generate font through `File > Generate Fonts...` after selecting BDF output
 
  _(Don't worry too much about the other options, as a hand-edit in Part II will take care of things.)_
 
