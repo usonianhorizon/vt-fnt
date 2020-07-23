@@ -39,7 +39,7 @@ Now the BDF will have a couple of things that will trip up vtfontcvt-ng:
 A couple of edits in the BDF will solve this:
 
 1. `FONTBOUNDINGBOX <fbbw>` has to match all the `DWIDTH <dwidth>` lines below (or x2 according to source, but we'll put that aside). This will require some hand-tuning because if you change fbbw to match dwidth the characters will be scrunched; and if you change dwidth to match fbbw, then your characters will be spaced too far apart. Anyway the important thing is that they match.
-1. The other edit was to delete all characters after 255.  The `STARTCHAR` might be descriptive or not (IBMPlexMono has it as ydieresis), but just delete all of the remaining chars while leaving the final `ENDFONT` line in place.  In the case of IBMPlexMono, I simply searched for `ENCODING 256`; selected from the previous `STARTCHAR` line to the penultimate line; and then deleted that selected block, leaving the `ENDFONT` line intact.
+1. The other edit was to delete all characters after 255.  The `STARTCHAR` might be descriptive or not (IBMPlexMono has it as _ydieresis_), but just delete all of the remaining chars while leaving the final `ENDFONT` line in place.  In the case of IBMPlexMono, I simply searched for `ENCODING 256`; selected from the previous `STARTCHAR` line to the penultimate line; and then deleted that selected block, leaving the `ENDFONT` line intact.
 1. In `FONT` line ensure that `SPACING` as per X- logical font description is 'C' for _Character Cell_ \(See: [X logical font description](https://en.wikipedia.org/wiki/X_logical_font_description)\).  And also ensure that the line that explicitly states `SPACING` matches with a corresponding 'C'.
 
 ## Part III&mdash;Install FNT files.
