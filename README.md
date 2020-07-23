@@ -4,7 +4,7 @@
 
 A collection of bitmap .FNT fonts created from various programming fonts, and to be used by FreeBSD's vt(-ng) console terminal.
 
-At present, only **IBMPlexMono-Light** and **IBMPlexMono-Medium** each in pixel height ranges of 12&#8212;16 have been converted.
+At present, only **IBMPlexMono-Light** and **IBMPlexMono-Medium** each in pixel height ranges of 12&ndash;16 have been converted.
 
 _These were generated using FontForge under FreeBSD with 160dpi setting on output to best match FHD (1920x1080) on a 14" diagonal screen size._
 
