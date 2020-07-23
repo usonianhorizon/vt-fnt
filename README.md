@@ -48,7 +48,7 @@ With these changes go ahead and run the usual commands to install:
 ```
 $ vtfontcvt-ng IBMPlexMono/IBMPlexMono-Light-14.bdf fnt/IBMPlexMono-Light-14.fnt
 $ sudo cp fnt/*.fnt /usr/share/vt/fonts
-$ sudo vidcontrol -f /usr/share/vt/fonts/IBMPlexMono-Light-14.fnt # While in vt, and notin X-
+$ sudo vidcontrol -f /usr/share/vt/fonts/IBMPlexMono-Light-14.fnt # While in vt, and not in X-
 ```
 
 That should give you a path to a font of choice.  Of course, this doesn't ensure that the generated font will be at all aesthetically pleasing, and certainly won't be as nice as a handcrafted bitmap font.  But it did allow me to get a decent approximation of IBMPlexMono under vt.
